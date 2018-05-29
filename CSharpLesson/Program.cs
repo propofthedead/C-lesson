@@ -8,12 +8,17 @@ namespace CSharpLesson
 {
 	class Program
 	{
+		struct gamer
+		{
+			public string name;
+			public int favnbr;
+		}
 		static void Main(string[] args)
 		{
-			int a=23*37;
-			int b = a -41;
+			int a = 23 * 37;
+			int b = a - 41;
 			string aStr = a.ToString();
-			Console.WriteLine(b/7);
+			Console.WriteLine(b / 7);
 			string fname = "Foster";
 			int days = 6;
 			Console.WriteLine("My name is " + fname + " I've been in bootcamp for " + days + " days");
@@ -41,20 +46,31 @@ namespace CSharpLesson
 			frames[8] = 6;
 			frames[9] = 4;
 			int total = 0;
-			for (int i = 0; i< 10; i++) 
-				{
+			for (int i = 0; i < 10; i++) {
 				total = total + frames[i];
 			}
 			Console.WriteLine(total);
-			string[] names = { "Greg", "Michael", "Dan", "Anna", "Marcus","Foster","Jermain","Mitchell","Jonathan","Larry","William" };
-			foreach (string name in names) 
-				{
+			string[] names = { "Greg", "Michael", "Dan", "Anna", "Marcus", "Foster", "Jermain", "Mitchell", "Jonathan", "Larry", "William" };
+			foreach (string name in names) {
 				Console.WriteLine("hi " + name);
 			}
 			string[] me = { "Foster Stulen", "Mason, OH", "camodude5@yahoo.com" };
-			foreach (string stuff in me) 
-			{
+			foreach (string stuff in me) {
 				Console.WriteLine(stuff);
+			};
+
+
+	
+			gamer ken;
+			ken.name="ken";
+			ken.favnbr=10;
+			gamer nick;
+			nick.name = "nick";
+			nick.favnbr = 7;
+			gamer[] gamers = { ken, nick };
+			foreach (gamer grm in gamers) 
+			{
+				Console.WriteLine("{0} {1}", grm.name, grm.favnbr);
 			}
 		}
 	}
