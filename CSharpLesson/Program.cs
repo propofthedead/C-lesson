@@ -14,9 +14,9 @@ namespace CSharpLesson
 			int b = a -41;
 			string aStr = a.ToString();
 			Console.WriteLine(b/7);
-			string name = "Foster";
+			string fname = "Foster";
 			int days = 6;
-			Console.WriteLine("My name is " + name + " I've been in bootcamp for " + days + " days");
+			Console.WriteLine("My name is " + fname + " I've been in bootcamp for " + days + " days");
 			int byear = 1997;
 			int bmonth = 4;
 			int bday = 8;
@@ -46,7 +46,16 @@ namespace CSharpLesson
 				total = total + frames[i];
 			}
 			Console.WriteLine(total);
-
+			string[] names = { "Greg", "Michael", "Dan", "Anna", "Marcus","Foster","Jermain","Mitchell","Jonathan","Larry","William" };
+			foreach (string name in names) 
+				{
+				Console.WriteLine("hi " + name);
+			}
+			string[] me = { "Foster Stulen", "Mason, OH", "camodude5@yahoo.com" };
+			foreach (string stuff in me) 
+			{
+				Console.WriteLine(stuff);
+			}
 		}
 	}
 }
