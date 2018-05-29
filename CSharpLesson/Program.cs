@@ -28,6 +28,25 @@ namespace CSharpLesson
 			int dayyears = 31 + 28 + 31 + 30 + 29;
 			int daysold = (years * 365) + dayss + dayyears;
 			Console.WriteLine(daysold);
+
+			int[] frames = new int[10];
+			frames[0] = 30;
+			frames[1] = 17;
+			frames[2] = 10;
+			frames[3] = 15;
+			frames[4] = 26;
+			frames[5] = 7;
+			frames[6] = 28;
+			frames[7] = 20;
+			frames[8] = 6;
+			frames[9] = 4;
+			int total = 0;
+			for (int i = 0; i< 10; i++) 
+				{
+				total = total + frames[i];
+			}
+			Console.WriteLine(total);
+
 		}
 	}
 }
