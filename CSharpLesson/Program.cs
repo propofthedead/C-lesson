@@ -79,9 +79,15 @@ namespace CSharpLesson
 			Console.WriteLine("Please enter a number now");
 			string rep = Console.ReadLine();
 			Console.WriteLine(rep);
-			if (a == (23*37)) 
-			{
+			if (a == (23 * 37) || a < 50) {
 				Console.WriteLine("a is greater than zero");
+			} else 
+			{
+				Console.WriteLine("not suppose to see this");
+				if (a == 200) 
+				{
+					Console.WriteLine("reaching the bottom of the barrel");
+				}
 			}
 		}
 	}
