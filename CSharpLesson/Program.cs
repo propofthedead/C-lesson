@@ -92,8 +92,20 @@ namespace CSharpLesson
 			Console.WriteLine("please enter a number");
 			string hmm = Console.ReadLine();
 			int x1 = int.Parse(hmm);
+			string color = "green";
 			if (x1 == 100) {
 				Console.WriteLine("x is 100");
+				if (color == "red") {
+					Console.WriteLine("Color is red");
+				} else {
+					if (color == "yellow") {
+						Console.WriteLine("Color is yellow");
+					} else {
+						if (color == "green") {
+							Console.WriteLine("color is green");
+						}
+					}
+				}
 			} else 
 			{
 				if (x1 == 200) {
@@ -105,6 +117,14 @@ namespace CSharpLesson
 						Console.WriteLine("x is not 100,200 or 300");
 					}
 				}
+			}
+			int guess =123;
+			bool win = false;
+			while (win == false) 
+				{
+				Console.WriteLine("please enter a number to guess");
+				int player = int.Parse(Console.ReadLine());
+				if (player == guess) { win = true; }
 			}
 		}
 	}
