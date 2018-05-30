@@ -79,7 +79,7 @@ namespace CSharpLesson
 			Console.WriteLine("Please enter a number now");
 			string rep = Console.ReadLine();
 			Console.WriteLine(rep);
-			if (a > 0) 
+			if (a == (23*37)) 
 			{
 				Console.WriteLine("a is greater than zero");
 			}
