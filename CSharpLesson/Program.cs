@@ -76,6 +76,13 @@ namespace CSharpLesson
 
 			string response = Console.ReadLine();
 			Console.WriteLine(response);
+			Console.WriteLine("Please enter a number now");
+			string rep = Console.ReadLine();
+			Console.WriteLine(rep);
+			if (a > 0) 
+			{
+				Console.WriteLine("a is greater than zero");
+			}
 		}
 	}
 }
