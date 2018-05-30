@@ -33,7 +33,7 @@ namespace CSharpLesson
 			int dayyears = 31 + 28 + 31 + 30 + 29;
 			int daysold = (years * 365) + dayss + dayyears;
 			Console.WriteLine(daysold);
-
+			//Initalizes the frame items
 			int[] frames = new int[10];
 			frames[0] = 30;
 			frames[1] = 17;
@@ -49,6 +49,7 @@ namespace CSharpLesson
 			for (int i = 0; i < 10; i++) {
 				total = total + frames[i];
 			}
+			//complies to 
 			Console.WriteLine(total);
 			string[] names = { "Greg", "Michael", "Dan", "Anna", "Marcus", "Foster", "Jermain", "Mitchell", "Jonathan", "Larry", "William" };
 			foreach (string name in names) {
@@ -72,6 +73,9 @@ namespace CSharpLesson
 			{
 				Console.WriteLine("{0} {1}", grm.name, grm.favnbr);
 			}
+
+			string response = Console.ReadLine();
+			Console.WriteLine(response);
 		}
 	}
 }
