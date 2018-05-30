@@ -74,11 +74,11 @@ namespace CSharpLesson
 				Console.WriteLine("{0} {1}", grm.name, grm.favnbr);
 			}
 
-			string response = Console.ReadLine();
-			Console.WriteLine(response);
-			Console.WriteLine("Please enter a number now");
-			string rep = Console.ReadLine();
-			Console.WriteLine(rep);
+			//string response = Console.ReadLine();
+			//Console.WriteLine(response);
+			//Console.WriteLine("Please enter a number now");
+			//string rep = Console.ReadLine();
+			//Console.WriteLine(rep);
 			if (a == (23 * 37) || a < 50) {
 				Console.WriteLine("a is greater than zero");
 			} else 
@@ -87,6 +87,23 @@ namespace CSharpLesson
 				if (a == 200) 
 				{
 					Console.WriteLine("reaching the bottom of the barrel");
+				}
+			}
+			Console.WriteLine("please enter a number");
+			string hmm = Console.ReadLine();
+			int x1 = int.Parse(hmm);
+			if (x1 == 100) {
+				Console.WriteLine("x is 100");
+			} else 
+			{
+				if (x1 == 200) {
+					Console.WriteLine("x is 200");
+				} else {
+					if (x1 == 300) {
+						Console.WriteLine("x is 300");
+					} else {
+						Console.WriteLine("x is not 100,200 or 300");
+					}
 				}
 			}
 		}
