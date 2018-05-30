@@ -126,6 +126,19 @@ namespace CSharpLesson
 				int player = int.Parse(Console.ReadLine());
 				if (player == guess) { win = true; }
 			}
+			int idx = 0;
+			while (idx < 50) {
+				if (idx % 2 == 0) {
+					Console.WriteLine("The index {0} is even.", idx);
+				}
+				if (idx % 3 == 0) {
+					Console.WriteLine("The index {0} is dix by 3", idx);
+				}
+				if (idx % 7 == 0) {
+					Console.WriteLine("the index {0} is div by 7", idx);
+				}
+				idx++;
+			}
 		}
 	}
 }
